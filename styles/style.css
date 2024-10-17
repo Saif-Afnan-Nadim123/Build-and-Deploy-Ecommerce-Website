@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+/* ===================common css style ==============*/
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700px;
+    line-height: 12px;
+}
+
+P {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* header section style */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 16px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #0cdfd1;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #0cdfd1;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*  <!-- =============== heroo section start--> */
+.hero {
+    background-image: url(/img/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 30% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h4 {
+    padding-bottom: 15px;
+}
+
+.hero h1 {
+    color: #0cdfd1;
+}
+
+.hero button {
+    color: #0cdfd1;
+    background-color: transparent;
+    background-image: url(/img/button.png);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+}
+/* <!-- features section !!!!!!!!!!!!!!!!!!!--> */
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+#features .features-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 5px;
+    transition: 0.5s;
+    
+}
+#features .features-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.5);
+    transform: translate();
+}
+#features .features-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#features .features-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 5px;
+    color: #0cdfd1;
+    background-color: #fddde4;
+    display: inline-block;
+}
+#features .features-box:nth-child(2) h6{
+    background-color: #8acc64;
+    color: aqua;
+}
+#features .features-box:nth-child(3) h6{
+    background-color: #6559ab;
+}
+#features .features-box:nth-child(4) h6{
+    background-color: #a77e36;
+}
+#features .features-box:nth-child(5) h6{
+    background-color: #143104;
+}
+#features .features-box:nth-child(6) h6{
+    background-color: #10b42c;
+}
+
