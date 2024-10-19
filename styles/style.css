@@ -269,3 +269,168 @@ grid-template-columns: repeat(4, 1fr);
     right: 10px;
    
 }
+/* <!-- !!!!!!!!!!!!!call to action  --> */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/banner/b2.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+text-align: center;
+color: #10b42c;
+}
+#banner h2{
+text-align: center;
+margin-top: 10px;
+color: #10b42c;
+}
+#banner h2 span{
+    color: antiquewhite;
+}
+#banner button {
+    margin-top: 10px;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    border: none;
+    background-color: #f0f0f0; /* Example background color */
+    cursor: pointer;
+    border-radius: 9px;
+    transition: 0.5s;
+    color: #143104;
+}
+#banner button:hover{
+    background-color: #3ea099;
+    transform: translate();
+}
+/* <!-- smaller banner section --> style */
+#sm-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(/img/banner/b17.jpg);
+    border-radius: 15px;
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding-left: 15px;
+}
+#sm-banner .banner-box h4{
+    text-align: center;
+    color: #10b42c;
+}
+#sm-banner .banner-box h2{
+    text-align: center;
+    margin-top: 10px;
+    color: #10b42c;
+}
+#sm-banner .banner-box span{
+    color: rgb(47, 210, 18);
+    margin-top: 10px;
+}
+#sm-banner .banner-box button{
+    margin-top: 10px;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    border: none;
+    background-color: rgb(106, 181, 106); /* Example background color */
+    cursor: pointer;
+    border-radius: 9px;
+    transition: 0.5s;
+    color: #143104;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #fff;
+}
+#sm-banner .banner-box button:hover{
+    background-color: #0df4e5;
+    transform: translate();
+}
+#sm-banner .banner-box2{
+    background-image: url(/img/banner/b10.jpg);
+}
+/* <!-- another section --> banner style */
+
+#banner-3{
+   display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+
+}
+
+#banner-3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(/img/banner/b7.jpg);
+    border-radius: 15px;
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+}
+#banner-3 .banner-box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(/img/banner/b4.jpg);
+    border-radius: 15px;
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+}
+#banner-3 .banner-box-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(/img/banner/b18.jpg);
+    border-radius: 15px;
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
+}
+.banner-box h4{
+color: wheat;
+padding: 10px;
+}
+.banner-box h2{
+    color: rgb(7, 255, 201);
+    padding: 10px;
+    font-size: 29px;
+    font-weight: bold;
+}
