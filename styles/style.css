@@ -101,6 +101,14 @@ body {
     bottom: -4px;
     left: 20px;
 }
+#mobile{
+    display: none;
+    align-items: center;
+
+}
+#close{
+    display: none;
+}
 
 /*  <!-- =============== heroo section start--> */
 .hero {
@@ -486,11 +494,6 @@ footer{
     gap: 20px;
     align-items: center;
 }
-footer .end p{
-    width: 100%;
-    text-align: center;
-    color: red;
-}
 footer .col {
     display: flex;
     flex-direction: column;
@@ -537,10 +540,101 @@ footer .follow i:hover{
 }
 
 
+/* this is responsive  code  */
+@media (max-width: 1200px) {
+    /* Tablet */
+    .hero {
+        height: 75vh;
+        padding: 0 50px;
+    }
 
+    .Pro-Container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
- footer .end {
-    text-align: center;
-   width: 100%;
-   color: red;
+    #features {
+        flex-wrap: wrap;
+    }
+
+    #navbar li {
+        padding: 0 10px;
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+@media (max-width: 768px) {
+    /* Mobile */
+    #header {
+        flex-direction: column;
+        padding: 10px 40px;
+    }
+
+    .hero {
+        height: 60vh;
+        padding: 0 20px;
+    }
+
+    #features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .Pro-Container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Extra Small Mobile */
+    .hero {
+        height: 50vh;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    #features {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #sm-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .Pro-Container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* this is mobile device media query */
+@media screen and(max-width:576) {
+    
+}
+
+
+
+
+ 
